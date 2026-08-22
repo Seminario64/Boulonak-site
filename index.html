@@ -75,7 +75,7 @@ h1,h2,h3,.logo,.member-badge,.btn,.k,.slogan{font-family:'Barlow Condensed','Ari
   .hero{min-height:calc(100svh - 92px);padding:64px 6% 72px;background-position:58% center}
   .hero>div{max-width:100%;min-width:0}
   .hero h1{font-size:clamp(42px,14vw,72px);white-space:normal;max-width:100%;overflow-wrap:normal}
-  .hero .slogan{max-width:100%;white-space:normal;font-size:clamp(24px,8vw,38px);line-height:1.15;padding:9px 14px}
+  .hero .slogan{width:100%;max-width:330px;white-space:nowrap;font-size:clamp(20px,6vw,26px);line-height:1.1;padding:9px 14px}
   .hero p{font-size:17px;line-height:1.5}
   .hero{min-height:calc(100svh - 92px);padding:64px 6% 72px;background-position:60% center}.hero:after{background:linear-gradient(90deg,#090909e8,#09090990)}.hero .k{font-size:12px;letter-spacing:2px}.home-links{gap:8px}.home-link{padding:11px 13px}
   .btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;padding:14px 16px}
@@ -109,6 +109,7 @@ document.head.appendChild(mobileStyles);
 document.querySelector('#loginScreen img').src='logo 3.png';
 document.querySelector('#memberSite header .logo img').src='logo 3.png';
 document.querySelector('.hero h1').textContent='SARAKO BOULONAK';
+document.querySelector('.hero .slogan').innerHTML='Faire vivre, partager,<br>s’amuser !';
 document.title='SARAKO BOULONAK';
 const footerLogo=document.querySelector('footer .logo img');
 footerLogo?.replaceWith(Object.assign(document.createElement('div'),{className:'footer-brand',innerHTML:'<span class="green">SARAKO</span> <span class="red">BOULONAK</span>'}));
