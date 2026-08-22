@@ -59,7 +59,7 @@ h1,h2,h3,.logo,.member-badge,.btn,.k,.slogan{font-family:'Barlow Condensed','Ari
 .cart{padding:25px;background:#111;color:#fff;position:sticky;top:20px}.cart h3{margin:8px 0 18px;font-size:25px}.cart-items{min-height:50px;color:#ccc;line-height:1.6}.cart-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #ffffff2b;padding:7px 0}.cart-total{display:flex;justify-content:space-between;padding:16px 0;margin-top:8px;border-top:1px solid #ffffff55;font:700 22px 'Barlow Condensed',Arial,sans-serif}.cart input{width:100%;padding:12px;margin:5px 0;border:1px solid #aaa;font-size:16px}.cart .btn{width:100%;margin-top:10px}.order-note{color:#aaa;font-size:12px;line-height:1.4}
 .member-nav{display:flex;gap:7px;width:100%;padding:10px 6%;background:#f4f1eb;border-bottom:1px solid #ddd;overflow-x:auto;scrollbar-width:none}.member-nav::-webkit-scrollbar{display:none}.member-tab{flex:0 0 auto;padding:12px 18px;border:1px solid #d8d2ca;background:#fff;color:#333;font:700 15px 'Barlow Condensed',Arial,sans-serif;letter-spacing:.5px;cursor:pointer}.member-tab.active{background:#d71920;border-color:#d71920;color:#fff}.tab-panel[hidden]{display:none!important}
 .partners{padding:80px 8%;background:#f4f1eb}.partners-intro{max-width:620px;color:#555;line-height:1.6}.partner-logos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:32px}.partner-slot{min-height:150px;display:grid;place-items:center;padding:20px;border:1px dashed #bcb4aa;background:#fff;color:#777;text-align:center;font:600 15px 'DM Sans',Arial,sans-serif}
-.partner-slot img{display:block;max-width:100%;max-height:110px;object-fit:contain}
+.partner-slot img{display:block;max-width:100%;max-height:110px;object-fit:contain}.partner-slot:nth-child(5){display:grid}
 @media(max-width:560px){
   #loginScreen{min-height:100dvh;min-height:100svh;padding:max(16px,env(safe-area-inset-top)) 16px max(16px,env(safe-area-inset-bottom));align-items:center}
   .login-card{width:100%;max-height:calc(100dvh - 32px);overflow:auto;padding:26px 20px}
@@ -111,6 +111,7 @@ document.querySelector('#loginScreen img').src='logo 3.png';
 document.querySelector('#memberSite header .logo img').src='logo 3.png';
 document.querySelector('.hero h1').textContent='SARAKO BOULONAK';
 document.querySelector('.hero .slogan').innerHTML='Faire vivre, partager,<br>s’amuser !';
+document.querySelector('#asso .title').innerHTML='SARAKO BOULONAK,<br>plus qu’une association,<br>une famille !';
 document.title='SARAKO BOULONAK';
 const footerLogo=document.querySelector('footer .logo img');
 footerLogo?.replaceWith(Object.assign(document.createElement('div'),{className:'footer-brand',innerHTML:'<span class="green">SARAKO</span> <span class="red">BOULONAK</span>'}));
@@ -219,6 +220,13 @@ const jaureguiLogo=document.createElement('img');
 jaureguiLogo.src='jauregui peinture logo.png';
 jaureguiLogo.alt='Logo Jauregui Peinture';
 partnersPanel.querySelectorAll('.partner-slot')[3].replaceChildren(jaureguiLogo);
+const adarraLogo=document.createElement('img');
+adarraLogo.src='Logo-Adarra.png';
+adarraLogo.alt='Logo Adarra';
+const adarraSlot=document.createElement('div');
+adarraSlot.className='partner-slot';
+adarraSlot.replaceChildren(adarraLogo);
+partnersPanel.querySelector('.partner-logos').append(adarraSlot);
 cta.before(partnersPanel);
 const shirtProduct=document.querySelector('.product');
 shirtProduct.querySelector('.add-product').insertAdjacentHTML('beforebegin','<select class="size-select" aria-label="Taille du tee-shirt"><option value="Adulte homme - S">Adulte homme - S</option><option value="Adulte homme - M">Adulte homme - M</option><option value="Adulte homme - L">Adulte homme - L</option><option value="Adulte homme - XL">Adulte homme - XL</option><option value="Adulte femme - XS">Adulte femme - XS</option><option value="Adulte femme - S">Adulte femme - S</option><option value="Adulte femme - M">Adulte femme - M</option><option value="Adulte femme - L">Adulte femme - L</option><option value="Enfant - 7 ans">Enfant - 7 ans</option><option value="Enfant - 8 ans">Enfant - 8 ans</option><option value="Enfant - 9 ans">Enfant - 9 ans</option><option value="Enfant - 10 ans">Enfant - 10 ans</option><option value="Enfant - 11 ans">Enfant - 11 ans</option><option value="Enfant - 12 ans">Enfant - 12 ans</option></select>');
