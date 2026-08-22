@@ -1,0 +1,53 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BOULONAK</title><style>body{margin:0;font-family:Arial;color:#111}#memberSite{display:none}#loginScreen{min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(135deg,#000c,#0007),url('couverture.jpg') center/cover;color:#fff}.login-card{width:min(460px,100%);background:rgba(18,18,18,.92);border:1px solid #ffffff33;box-shadow:0 25px 70px #0008;padding:42px 36px;text-align:center}.login-card img{max-width:260px;max-height:120px;object-fit:contain;margin:0 auto 22px}.member-tag{display:inline-block;background:#d71920;padding:7px 13px;font-size:11px;font-weight:bold;letter-spacing:2px;margin-bottom:18px}.login-card h1{margin:0 0 10px;font-size:34px}.login-card p{color:#ddd;line-height:1.6;margin:0 0 24px}.login-card input{width:100%;padding:15px;margin:7px 0;border:1px solid #777;background:#fff;color:#111}.login-card input:focus{outline:2px solid #d71920;border-color:#d71920}.login-card .btn{width:100%;margin-top:12px}.login-footer{margin-top:22px;color:#aaa;font-size:12px}.logout{background:transparent;border:1px solid #666;color:#fff;padding:11px 14px;cursor:pointer;font-weight:bold}.member-actions{display:flex;gap:12px;align-items:center}.member-badge{background:#d71920;padding:9px 12px;font-size:11px;font-weight:bold;letter-spacing:1px}header{background:#111;color:#fff;padding:20px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0}.logo{font-size:28px;font-weight:900;letter-spacing:2px}.logo img{display:block;max-height:96px;max-width:320px;object-fit:contain}.logo small{display:block;color:#d71920;font-size:9px;letter-spacing:3px}.btn{background:#d71920;color:#fff;padding:14px 20px;border:0;font-weight:bold;cursor:pointer;text-decoration:none}.hero{min-height:650px;padding:0 8%;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,#000c,#0002),url('couverture.jpg') center/cover}.hero h1{font-size:clamp(75px,13vw,150px);margin:0}.hero .slogan{background:#d71920;display:inline-block;padding:10px 20px;font:38px cursive}.hero p{font-size:20px;max-width:620px;line-height:1.6}section{padding:80px 8%}.k{color:#d71920;font-weight:bold;letter-spacing:2px}.title{font-size:48px;margin:10px 0}.about{display:grid;grid-template-columns:1fr 1fr;gap:60px}.values,.cards,.photos{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.value{padding:24px;background:#f4f1eb;border-left:5px solid #d71920}.events{background:#f4f1eb}.cards{grid-template-columns:repeat(4,1fr)}.card{background:#fff;box-shadow:0 6px 20px #0002}.pic,.photo{height:210px;background:center/cover}.card div:last-child{padding:18px}.gallery{background:#111;color:#fff}.photos{grid-template-columns:repeat(4,1fr)}.cta{background:#d71920;color:#fff}.cta .title{font-size:60px}footer{background:#111;color:#bbb;padding:50px 8%}#modal{display:none;position:fixed;inset:0;background:#000c;place-items:center;z-index:10}.modal{background:#fff;padding:35px;width:min(400px,90%);text-align:center}.modal input{width:100%;padding:14px;margin:7px 0;border:1px solid #ddd}.err{color:#d71920;height:20px}@media(max-width:850px){.about,.cards,.photos{grid-template-columns:1fr 1fr}}@media(max-width:560px){.about,.cards,.photos,.values{grid-template-columns:1fr}.title{font-size:38px}.cta .title{font-size:42px}}</style></head><body>
+<div id="loginScreen">
+  <div class="login-card">
+    <img src="logo.JPG" alt="BOULONAK">
+    <div class="member-tag">ACCÈS PRIVÉ</div>
+    <h1>ESPACE MEMBRES</h1>
+    <p>Bienvenue dans l'espace privé de l'association BOULONAK.</p>
+    <input id="username" autocomplete="username" placeholder="Identifiant">
+    <input id="password" type="password" autocomplete="current-password" placeholder="Mot de passe">
+    <div id="loginError" class="err"></div>
+    <button class="btn" id="loginBtn">SE CONNECTER →</button>
+    <div class="login-footer">Association BOULONAK • Sare</div>
+  </div>
+</div>
+<div id="memberSite">
+<header><div class="logo"><img src="logo.JPG" alt="BOULONAK"></div><div class="member-actions"><span class="member-badge">ESPACE MEMBRES</span><button class="logout" id="logoutBtn">DÉCONNEXION</button></div></header><section class="hero"><div><div class="k">ASSOCIATION BASQUE • SARE</div><h1>BOULONAK</h1><div class="slogan">Faire vivre, partager, s'amuser !</div><p>Une association basque festive qui rassemble autour d'événements conviviaux, de traditions et de bons moments partagés.</p><a class="btn" href="#asso">DÉCOUVRIR L'ASSOCIATION →</a></div></section><section id="asso"><div class="about"><div><div class="k">QUI SOMMES-NOUS ?</div><h2 class="title">BOULONAK,<br>plus qu'une association,<br>une famille !</h2><p>Nous sommes une bande d'amis passionnés par notre culture, nos traditions et surtout par les bons moments partagés.</p><p>Notre objectif : organiser des événements ouverts à tous pour faire vivre l'esprit basque dans la joie et la simplicité.</p></div><div class="values"><div class="value">🤝<h3>CONVIVIALITÉ</h3>Des moments de partage authentiques.</div><div class="value">🎵<h3>FÊTE</h3>Soirées, repas et ambiance unique.</div><div class="value">🃏<h3>TRADITIONS</h3>Jeux, pelote et culture basque.</div><div class="value">❤<h3>SOLIDARITÉ</h3>Des projets menés ensemble.</div></div></div></section><section class="events"><div class="k">À NE PAS MANQUER</div><h2 class="title">NOS PROCHAINS ÉVÉNEMENTS</h2><div class="cards"><div class="card"><div class="pic" style="background-image:url('tournoi de mus.jpg')"></div><div><h3>TOURNOI DE MUS</h3><p>Un tournoi convivial aux Grottes de Sare.</p></div></div><div class="card"><div class="pic" style="background-image:url('repas covivial.jpg')"></div><div><h3>MARCHÉ DES PRODUCTEURS LOCAUX</h3><p>Un grand repas pour partager.</p></div></div><div class="card"><div class="pic" style="background-image:url('TAloa.jpg')"></div><div><h3>TALOA AUX FÊTES DE SARE</h3><p>Musique et bonne humeur.</p></div></div><div class="card"><div class="pic" style="background-image:url('journee pelote.jpg')"></div><div><h3>JOURNÉE PELOTE</h3><p>Tournois et initiations.</p></div></div></div></section><section class="gallery"><div class="k">EN IMAGES</div><h2 class="title">DES SOUVENIRS INOUBLIABLES</h2><div class="photos"><div class="photo" style="background-image:url('souvenir1.jpg')"></div><div class="photo" style="background-image:url('souvenir2.jpg')"></div><div class="photo" style="background-image:url('souvenir3.JPG')"></div><div class="photo" style="background-image:url('souvenir 5.jpg')"></div><div class="photo" style="background-image:url('souvenir6.jpg')"></div></div></section><section class="cta"><h2 class="title">REJOIGNEZ L'AVENTURE BOULONAK !</h2><p>Envie de participer, d'aider ou simplement de soutenir l'association ? Chaque coup de main compte !</p></section><footer><div class="logo"><img src="logo.JPG" alt="BOULONAK"></div><p>© 2026 Association BOULONAK — 64310 Sare</p></footer></div>
+<script>
+const loginScreen=document.getElementById('loginScreen');
+const memberSite=document.getElementById('memberSite');
+const username=document.getElementById('username');
+const password=document.getElementById('password');
+const loginError=document.getElementById('loginError');
+
+function showSite(){
+  loginScreen.style.display='none';
+  memberSite.style.display='block';
+  window.scrollTo(0,0);
+}
+function login(){
+  if(username.value==='Boulonak' && password.value==='Boulonak'){
+    loginError.textContent='';
+    sessionStorage.setItem('boulonakMember','yes');
+    showSite();
+  }else{
+    loginError.textContent='Identifiant ou mot de passe incorrect.';
+    password.value='';
+    password.focus();
+  }
+}
+document.getElementById('loginBtn').addEventListener('click',login);
+password.addEventListener('keydown',e=>{if(e.key==='Enter')login()});
+username.addEventListener('keydown',e=>{if(e.key==='Enter')password.focus()});
+document.getElementById('logoutBtn').addEventListener('click',()=>{
+  sessionStorage.removeItem('boulonakMember');
+  memberSite.style.display='none';
+  loginScreen.style.display='grid';
+  username.value='';
+  password.value='';
+  username.focus();
+  window.scrollTo(0,0);
+});
+if(sessionStorage.getItem('boulonakMember')==='yes') showSite();
+</script></body></html>
