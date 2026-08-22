@@ -22,12 +22,27 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}
 body{min-width:0;font-family:'DM Sans',Arial,sans-serif}
 h1,h2,h3,.logo,.member-badge,.btn,.k,.slogan{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif}
 .title{font-weight:700;letter-spacing:.2px}
+#loginScreen{position:relative;overflow:hidden}
+#loginScreen:before{content:'';position:absolute;inset:-12%;background:url('logo 3.png') center/contain no-repeat;opacity:.14;pointer-events:none;transform:rotate(-8deg) scale(1.15)}
+#loginScreen .login-card{position:relative;z-index:1}
 .values{gap:18px}
-.value{min-height:175px;padding:26px 24px;border:1px solid #e3ded6;border-left:3px solid #d71920;background:#fff;box-shadow:0 8px 24px #0000000d;position:relative;transition:transform .2s ease,box-shadow .2s ease}
+.value{min-height:140px;padding:20px 22px;border:1px solid #e3ded6;border-left:3px solid #d71920;background:#fff;box-shadow:0 8px 24px #0000000d;position:relative;transition:transform .2s ease,box-shadow .2s ease}
 .value:hover{transform:translateY(-4px);box-shadow:0 14px 30px #00000018}
   .value-mark{display:none}
-.value h3{margin:0 0 10px;font-size:18px;letter-spacing:1px}
-.value p{margin:0;line-height:1.55;color:#555}
+  .value h3{margin:0 0 7px;font-size:17px;letter-spacing:1px}
+  .value p{margin:0;line-height:1.45;color:#555;font-size:14px}
+.shop{padding:80px 8%;background:#fff}
+.shop-intro{margin:0 0 30px;color:#555}
+.shop-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:start}
+.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.product{display:grid;grid-template-columns:145px 1fr;border:1px solid #e3ded6;background:#f8f6f2;min-width:0}
+.product-art{display:grid;place-items:center;min-height:210px;background:#111;color:#fff;font:800 64px 'Barlow Condensed',Arial,sans-serif}
+.product-art img{width:100%;height:100%;min-height:210px;display:block;object-fit:cover;object-position:center;background:#f1eee8}
+.shirt-art{background:#d71920}.pen-art{background:#252525}.key-art{background:#8d6b4d}.wallet-art{background:#486052}
+.product-info{padding:15px}.product-info h3{margin:0 0 6px;font-size:18px}.product-info p{margin:0 0 10px;color:#555;font-size:13px;line-height:1.35}.product-info strong{display:block;margin-bottom:11px;font:700 21px 'Barlow Condensed',Arial,sans-serif}
+.add-product{width:100%;padding:10px 6px;border:1px solid #d71920;background:transparent;color:#d71920;font:700 13px 'Barlow Condensed',Arial,sans-serif;cursor:pointer}.add-product:hover{background:#d71920;color:#fff}
+.cart{padding:25px;background:#111;color:#fff;position:sticky;top:20px}.cart h3{margin:8px 0 18px;font-size:25px}.cart-items{min-height:50px;color:#ccc;line-height:1.6}.cart-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #ffffff2b;padding:7px 0}.cart-total{display:flex;justify-content:space-between;padding:16px 0;margin-top:8px;border-top:1px solid #ffffff55;font:700 22px 'Barlow Condensed',Arial,sans-serif}.cart input{width:100%;padding:12px;margin:5px 0;border:1px solid #aaa;font-size:16px}.cart .btn{width:100%;margin-top:10px}.order-note{color:#aaa;font-size:12px;line-height:1.4}
+.member-nav{display:flex;gap:7px;width:100%;padding:10px 6%;background:#f4f1eb;border-bottom:1px solid #ddd;overflow-x:auto;scrollbar-width:none}.member-nav::-webkit-scrollbar{display:none}.member-tab{flex:0 0 auto;padding:12px 18px;border:1px solid #d8d2ca;background:#fff;color:#333;font:700 15px 'Barlow Condensed',Arial,sans-serif;letter-spacing:.5px;cursor:pointer}.member-tab.active{background:#d71920;border-color:#d71920;color:#fff}.tab-panel[hidden]{display:none!important}
 @media(max-width:560px){
   #loginScreen{min-height:100dvh;min-height:100svh;padding:max(16px,env(safe-area-inset-top)) 16px max(16px,env(safe-area-inset-bottom));align-items:center}
   .login-card{width:100%;max-height:calc(100dvh - 32px);overflow:auto;padding:26px 20px}
@@ -52,14 +67,16 @@ h1,h2,h3,.logo,.member-badge,.btn,.k,.slogan{font-family:'Barlow Condensed','Ari
   .cta .title{font-size:clamp(36px,11vw,42px)}
   .value{padding:20px}
   .values{gap:12px}
-  .value{min-height:150px;padding:22px 20px;border:1px solid #e3ded6;border-left:3px solid #d71920;background:#fff;box-shadow:0 8px 24px #0000000d;position:relative}
+  .value{min-height:0;padding:18px 18px;border:1px solid #e3ded6;border-left:3px solid #d71920;background:#fff;box-shadow:0 8px 24px #0000000d;position:relative}
   .value-mark{display:block;color:#d71920;font-size:12px;font-weight:bold;letter-spacing:2px;margin-bottom:22px}
-  .value h3{margin:0 0 9px;font-size:17px;letter-spacing:1px}
-  .value p{margin:0;line-height:1.5;color:#555}
+  .value h3{margin:0 0 6px;font-size:16px;letter-spacing:1px}
+  .value p{margin:0;line-height:1.4;color:#555;font-size:14px}
   .pic,.photo{height:190px}
   .card h3{font-size:18px;line-height:1.2}
   .card p{line-height:1.5}
   footer{padding:40px 6%}
+  .shop{padding:56px 6%}.shop-layout,.products{grid-template-columns:1fr}.product{grid-template-columns:115px 1fr}.product-art{min-height:180px;font-size:52px}.product-art img{min-height:180px}.product-info{padding:13px}.product-info h3{font-size:17px}.product-info p{font-size:12px}.add-product{font-size:12px}.cart{position:static;padding:22px 18px}
+  .member-nav{padding:8px 6%;gap:6px}.member-tab{padding:11px 14px;font-size:14px}
 }
 @media(max-width:380px){
   .member-actions{align-items:stretch;flex-direction:column}
@@ -68,6 +85,8 @@ h1,h2,h3,.logo,.member-badge,.btn,.k,.slogan{font-family:'Barlow Condensed','Ari
   .hero p{font-size:16px}
 }`;
 document.head.appendChild(mobileStyles);
+document.querySelector('#loginScreen img').src='logo 3.png';
+document.querySelector('.cta p')?.remove();
 const loginScreen=document.getElementById('loginScreen');
 const memberSite=document.getElementById('memberSite');
 const username=document.getElementById('username');
@@ -82,10 +101,62 @@ document.querySelectorAll('.value').forEach((value,index)=>{
     text.replaceWith(paragraph);
   }
 });
+const cta=document.querySelector('.cta');
+cta.insertAdjacentHTML('beforebegin',`<section class="shop" id="boutique"><div class="k">LA BOUTIQUE BOULONAK</div><h2 class="title">LES ESSENTIELS DE L'ASSOCIATION</h2><p class="shop-intro">Commandez vos articles Boulonak directement en ligne.</p><div class="shop-layout"><div class="products"><article class="product"><div class="product-art shirt-art"><img src="tee shirt.png" alt="Tee-shirt Boulonak"></div><div class="product-info"><h3>TEE-SHIRT</h3><p>Le tee-shirt officiel Boulonak.</p><strong>20 EUR</strong><button class="add-product" data-name="Tee-shirt" data-price="20">AJOUTER AU PANIER</button></div></article><article class="product"><div class="product-art pen-art">B</div><div class="product-info"><h3>STYLO</h3><p>Le stylo aux couleurs de l'association.</p><strong>3 EUR</strong><button class="add-product" data-name="Stylo" data-price="3">AJOUTER AU PANIER</button></div></article><article class="product"><div class="product-art key-art">BK</div><div class="product-info"><h3>PORTE-CLES</h3><p>Un souvenir pratique a emporter partout.</p><strong>5 EUR</strong><button class="add-product" data-name="Porte-cles" data-price="5">AJOUTER AU PANIER</button></div></article><article class="product"><div class="product-art wallet-art">BM</div><div class="product-info"><h3>PORTE-MONNAIE</h3><p>Un accessoire compact aux couleurs Boulonak.</p><strong>8 EUR</strong><button class="add-product" data-name="Porte-monnaie" data-price="8">AJOUTER AU PANIER</button></div></article></div><aside class="cart"><div class="k">VOTRE COMMANDE</div><h3>Recapitulatif</h3><div id="cartItems" class="cart-items">Votre panier est vide.</div><div class="cart-total"><span>Total</span><strong id="cartTotal">0 EUR</strong></div><form id="orderForm"><input name="name" required placeholder="Nom et prenom"><input name="email" type="email" required placeholder="Votre e-mail"><input name="phone" type="tel" placeholder="Telephone"><button class="btn" type="submit">ENVOYER LA COMMANDE</button></form><p class="order-note">Votre application e-mail s'ouvrira pour finaliser l'envoi.</p></aside></div></section>`);
+const productImages=[['.pen-art','stylo.png','Stylo Boulonak'],['.key-art','porte clé.png','Porte-clés Boulonak'],['.wallet-art','porte monnaie.png','Porte-monnaie Boulonak']];
+productImages.forEach(([selector,source,alt])=>{
+  const image=document.createElement('img');
+  image.src=source;
+  image.alt=alt;
+  document.querySelector(selector).replaceChildren(image);
+});
+const tabs=[['home','ACCUEIL'],['asso','QUI SOMMES-NOUS'],['events','ÉVÉNEMENTS'],['boutique','BOUTIQUE']];
+const tabPanels=[document.querySelector('.hero'),document.getElementById('asso'),document.querySelector('.events'),document.getElementById('boutique')];
+document.querySelectorAll('.gallery,.cta').forEach(panel=>panel.hidden=true);
+const navigation=document.createElement('nav');
+navigation.className='member-nav';
+navigation.setAttribute('aria-label','Navigation membre');
+navigation.innerHTML=tabs.map(([id,label],index)=>`<button class="member-tab${index===0?' active':''}" data-tab="${id}" type="button">${label}</button>`).join('');
+document.querySelector('header').after(navigation);
+tabPanels.forEach((panel,index)=>{panel.classList.add('tab-panel');panel.hidden=index!==0;});
+navigation.addEventListener('click',event=>{
+  const button=event.target.closest('.member-tab');
+  if(!button)return;
+  const activeIndex=tabs.findIndex(([id])=>id===button.dataset.tab);
+  tabPanels.forEach((panel,index)=>{panel.hidden=index!==activeIndex;});
+  navigation.querySelectorAll('.member-tab').forEach(tab=>tab.classList.toggle('active',tab===button));
+  tabPanels[activeIndex].scrollIntoView({behavior:'smooth',block:'start'});
+});
+const cart={};
+const cartItems=document.getElementById('cartItems');
+const cartTotal=document.getElementById('cartTotal');
+function renderCart(){
+  const items=Object.values(cart);
+  cartItems.innerHTML=items.length?items.map(item=>`<div class="cart-line"><span>${item.name} x${item.quantity}</span><strong>${item.price*item.quantity} EUR</strong></div>`).join(''):'Votre panier est vide.';
+  cartTotal.textContent=`${items.reduce((total,item)=>total+item.price*item.quantity,0)} EUR`;
+}
+document.querySelectorAll('.add-product').forEach(button=>button.addEventListener('click',()=>{
+  const {name,price}=button.dataset;
+  cart[name]=cart[name]||{name,price:Number(price),quantity:0};
+  cart[name].quantity++;
+  renderCart();
+}));
+document.getElementById('orderForm').addEventListener('submit',event=>{
+  event.preventDefault();
+  if(!Object.keys(cart).length){alert('Ajoutez au moins un article au panier.');return;}
+  const formData=new FormData(event.currentTarget);
+  const details=Object.values(cart).map(item=>`${item.name} x${item.quantity} - ${item.price*item.quantity} EUR`).join('%0D%0A');
+  const total=cartTotal.textContent;
+  const subject=encodeURIComponent('Commande boutique Boulonak');
+  const body=encodeURIComponent(`Nom : ${formData.get('name')}\nE-mail : ${formData.get('email')}\nTéléphone : ${formData.get('phone')||'Non renseigne'}\n\nCommande :\n${Object.values(cart).map(item=>`${item.name} x${item.quantity} - ${item.price*item.quantity} EUR`).join('\n')}\n\nTotal : ${total}`);
+  window.location.href=`mailto:?subject=${subject}&body=${body}`;
+});
 
 function showSite(){
   loginScreen.style.display='none';
   memberSite.style.display='block';
+  tabPanels.forEach((panel,index)=>{panel.hidden=index!==0;});
+  navigation.querySelectorAll('.member-tab').forEach((tab,index)=>tab.classList.toggle('active',index===0));
   window.scrollTo(0,0);
 }
 function login(){
