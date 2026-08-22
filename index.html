@@ -216,9 +216,9 @@ partnersPanel.querySelectorAll('.partner-slot')[3].replaceChildren(jaureguiLogo)
 cta.before(partnersPanel);
 const shirtProduct=document.querySelector('.product');
 shirtProduct.querySelector('.add-product').insertAdjacentHTML('beforebegin','<select class="size-select" aria-label="Taille du tee-shirt"><option value="Adulte homme - S">Adulte homme - S</option><option value="Adulte homme - M">Adulte homme - M</option><option value="Adulte homme - L">Adulte homme - L</option><option value="Adulte homme - XL">Adulte homme - XL</option><option value="Adulte femme - XS">Adulte femme - XS</option><option value="Adulte femme - S">Adulte femme - S</option><option value="Adulte femme - M">Adulte femme - M</option><option value="Adulte femme - L">Adulte femme - L</option><option value="Enfant - 7 ans">Enfant - 7 ans</option><option value="Enfant - 8 ans">Enfant - 8 ans</option><option value="Enfant - 9 ans">Enfant - 9 ans</option><option value="Enfant - 10 ans">Enfant - 10 ans</option><option value="Enfant - 11 ans">Enfant - 11 ans</option><option value="Enfant - 12 ans">Enfant - 12 ans</option></select>');
-const tabs=[['home','ACCUEIL'],['asso','QUI SOMMES-NOUS'],['events','ÉVÉNEMENTS'],['boutique','BOUTIQUE'],['partenaires','NOS PARTENAIRES']];
-const tabPanels=[document.querySelector('.hero'),document.getElementById('asso'),document.querySelector('.events'),document.getElementById('boutique'),partnersPanel];
-document.querySelectorAll('.gallery,.cta').forEach(panel=>panel.hidden=true);
+const tabs=[['home','ACCUEIL'],['asso','QUI SOMMES-NOUS'],['events','ÉVÉNEMENTS'],['boutique','BOUTIQUE'],['partenaires','NOS PARTENAIRES'],['souvenirs','NOS SOUVENIRS']];
+const tabPanels=[document.querySelector('.hero'),document.getElementById('asso'),document.querySelector('.events'),document.getElementById('boutique'),partnersPanel,document.querySelector('.gallery')];
+document.querySelectorAll('.cta').forEach(panel=>panel.hidden=true);
 const navigation=document.createElement('nav');
 navigation.className='member-nav';
 navigation.setAttribute('aria-label','Navigation membre');
