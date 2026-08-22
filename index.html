@@ -4,7 +4,7 @@
     <img src="logo.JPG" alt="BOULONAK">
     <div class="member-tag">ACCÈS PRIVÉ</div>
     <h1>ESPACE MEMBRES</h1>
-    <p>Bienvenue dans l'espace privé de l'association BOULONAK.</p>
+    <p>Bienvenue dans l'espace privé de l'association SARAKO BOULONAK</p>
     <input id="username" autocomplete="username" placeholder="Identifiant">
     <input id="password" type="password" autocomplete="current-password" placeholder="Mot de passe">
     <div id="loginError" class="err"></div>
@@ -23,6 +23,8 @@ body{min-width:0;font-family:'DM Sans',Arial,sans-serif}
 h1,h2,h3,.logo,.member-badge,.btn,.k,.slogan{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif}
 .title{font-weight:700;letter-spacing:.2px}
 #loginScreen{position:relative;overflow:hidden}
+#memberSite header .logo img{max-width:380px;max-height:112px;width:100%}
+.hero{min-height:clamp(560px,72vh,720px);padding:80px 8%;position:relative;overflow:hidden;background-position:center 42%}.hero:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#090909e8 0%,#090909a8 42%,#0909091c 100%);pointer-events:none}.hero>div{position:relative;z-index:1;max-width:720px}.hero .k{font-size:14px;letter-spacing:3px}.hero h1{margin:12px 0 4px;font-size:clamp(80px,12vw,156px);line-height:.85;letter-spacing:2px}.hero .slogan{margin:18px 0 20px;box-shadow:8px 8px 0 #d71920aa}.hero p{max-width:560px;margin-bottom:30px}.home-links{display:flex;gap:10px;flex-wrap:wrap}.home-link{padding:12px 17px;border:1px solid #ffffff80;background:#ffffff12;color:#fff;font:700 15px 'Barlow Condensed',Arial,sans-serif;letter-spacing:.6px;cursor:pointer}.home-link:hover{background:#fff;color:#111}
 #loginScreen:before{content:'';position:absolute;inset:-12%;background:url('logo 3.png') center/contain no-repeat;opacity:.14;pointer-events:none;transform:rotate(-8deg) scale(1.15)}
 #loginScreen .login-card{position:relative;z-index:1}
 .values{gap:18px}
@@ -40,18 +42,29 @@ h1,h2,h3,.logo,.member-badge,.btn,.k,.slogan{font-family:'Barlow Condensed','Ari
 .product-art img{width:100%;height:100%;min-height:210px;display:block;object-fit:cover;object-position:center;background:#f1eee8}
 .shirt-art{background:#d71920}.pen-art{background:#252525}.key-art{background:#8d6b4d}.wallet-art{background:#486052}
 .product-info{padding:15px}.product-info h3{margin:0 0 6px;font-size:18px}.product-info p{margin:0 0 10px;color:#555;font-size:13px;line-height:1.35}.product-info strong{display:block;margin-bottom:11px;font:700 21px 'Barlow Condensed',Arial,sans-serif}
+.fries-art{position:relative;overflow:hidden;background:linear-gradient(155deg,transparent 0 46%,#e9b62c 47% 50%,transparent 51%),linear-gradient(164deg,transparent 0 51%,#f6d35b 52% 55%,transparent 56%),linear-gradient(146deg,transparent 0 57%,#d99c1f 58% 62%,transparent 63%),linear-gradient(174deg,transparent 0 43%,#f4c83e 44% 48%,transparent 49%),linear-gradient(90deg,#d71920 0 15%,#f4f1eb 16% 84%,#d71920 85%);background-size:100% 100%,100% 100%,100% 100%,100% 100%,100% 100%;background-position:center}
+.fries-art:after{content:'FRITES';position:absolute;bottom:22px;left:18%;right:18%;padding:9px 3px;background:#d71920;color:#fff;text-align:center;font:700 20px 'Barlow Condensed',Arial,sans-serif;letter-spacing:2px;transform:skewY(-4deg)}
+.fries-art img{width:100%;height:100%;min-height:210px;display:block;object-fit:cover;object-position:center}
+.event-date{display:block;margin:0 0 7px;color:#d71920;font:700 15px 'Barlow Condensed',Arial,sans-serif;letter-spacing:1px}.event-register{margin-top:12px;padding:10px 13px;border:1px solid #d71920;background:transparent;color:#d71920;font:700 13px 'Barlow Condensed',Arial,sans-serif;cursor:pointer}.event-register:hover{background:#d71920;color:#fff}.registration-panel{display:none;margin-top:28px;padding:28px;background:#111;color:#fff}.registration-panel.open{display:block}.registration-panel h3{margin:8px 0 8px;font-size:28px}.registration-panel p{color:#ccc}.registration-form{display:grid;grid-template-columns:1fr 1fr;gap:10px}.registration-form input{width:100%;padding:13px;border:1px solid #aaa;font-size:16px}.registration-form .btn{grid-column:1/-1}.registration-note{font-size:12px;color:#aaa}
+.event-price{display:block;margin-top:8px;font:700 20px 'Barlow Condensed',Arial,sans-serif}
+.pic img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.footer-brand{font:800 30px 'Barlow Condensed','Arial Narrow',Arial,sans-serif;letter-spacing:1px}.footer-brand .green{color:#32834a}.footer-brand .red{color:#d71920}
 .add-product{width:100%;padding:10px 6px;border:1px solid #d71920;background:transparent;color:#d71920;font:700 13px 'Barlow Condensed',Arial,sans-serif;cursor:pointer}.add-product:hover{background:#d71920;color:#fff}
+.size-select{width:100%;margin:0 0 10px;padding:10px 8px;border:1px solid #cfc8bf;background:#fff;color:#333;font:500 13px 'DM Sans',Arial,sans-serif}
 .cart{padding:25px;background:#111;color:#fff;position:sticky;top:20px}.cart h3{margin:8px 0 18px;font-size:25px}.cart-items{min-height:50px;color:#ccc;line-height:1.6}.cart-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #ffffff2b;padding:7px 0}.cart-total{display:flex;justify-content:space-between;padding:16px 0;margin-top:8px;border-top:1px solid #ffffff55;font:700 22px 'Barlow Condensed',Arial,sans-serif}.cart input{width:100%;padding:12px;margin:5px 0;border:1px solid #aaa;font-size:16px}.cart .btn{width:100%;margin-top:10px}.order-note{color:#aaa;font-size:12px;line-height:1.4}
 .member-nav{display:flex;gap:7px;width:100%;padding:10px 6%;background:#f4f1eb;border-bottom:1px solid #ddd;overflow-x:auto;scrollbar-width:none}.member-nav::-webkit-scrollbar{display:none}.member-tab{flex:0 0 auto;padding:12px 18px;border:1px solid #d8d2ca;background:#fff;color:#333;font:700 15px 'Barlow Condensed',Arial,sans-serif;letter-spacing:.5px;cursor:pointer}.member-tab.active{background:#d71920;border-color:#d71920;color:#fff}.tab-panel[hidden]{display:none!important}
+.partners{padding:80px 8%;background:#f4f1eb}.partners-intro{max-width:620px;color:#555;line-height:1.6}.partner-logos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:32px}.partner-slot{min-height:150px;display:grid;place-items:center;padding:20px;border:1px dashed #bcb4aa;background:#fff;color:#777;text-align:center;font:600 15px 'DM Sans',Arial,sans-serif}
+.partner-slot img{display:block;max-width:100%;max-height:110px;object-fit:contain}
 @media(max-width:560px){
   #loginScreen{min-height:100dvh;min-height:100svh;padding:max(16px,env(safe-area-inset-top)) 16px max(16px,env(safe-area-inset-bottom));align-items:center}
   .login-card{width:100%;max-height:calc(100dvh - 32px);overflow:auto;padding:26px 20px}
   .login-card h1{font-size:28px}
-  .login-card img{max-width:210px;max-height:90px}
+  .login-card img{max-width:280px;max-height:140px;width:100%;margin:0 auto 24px}
   .login-card input{width:100%;min-height:48px;font-size:16px}
   .login-card .btn{width:100%;min-height:48px}
   header{padding:14px 6%;gap:14px;flex-wrap:wrap}
   .logo{width:100%}
+  #memberSite header .logo img{max-width:250px;max-height:78px}
   .logo img{max-width:190px;max-height:64px}
   .member-actions{width:100%;justify-content:space-between;gap:8px}
   .member-badge,.logout{padding:11px 10px}
@@ -60,6 +73,7 @@ h1,h2,h3,.logo,.member-badge,.btn,.k,.slogan{font-family:'Barlow Condensed','Ari
   .hero h1{font-size:clamp(42px,16vw,90px);white-space:nowrap}
   .hero .slogan{max-width:100%;white-space:normal;font-size:clamp(24px,8vw,38px);line-height:1.15;padding:9px 14px}
   .hero p{font-size:17px;line-height:1.5}
+  .hero{min-height:calc(100svh - 92px);padding:64px 6% 72px;background-position:60% center}.hero:after{background:linear-gradient(90deg,#090909e8,#09090990)}.hero .k{font-size:12px;letter-spacing:2px}.home-links{gap:8px}.home-link{padding:11px 13px}
   .btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;padding:14px 16px}
   section{padding:56px 6%}
   .about,.cards,.photos,.values{grid-template-columns:1fr}
@@ -75,8 +89,11 @@ h1,h2,h3,.logo,.member-badge,.btn,.k,.slogan{font-family:'Barlow Condensed','Ari
   .card h3{font-size:18px;line-height:1.2}
   .card p{line-height:1.5}
   footer{padding:40px 6%}
-  .shop{padding:56px 6%}.shop-layout,.products{grid-template-columns:1fr}.product{grid-template-columns:115px 1fr}.product-art{min-height:180px;font-size:52px}.product-art img{min-height:180px}.product-info{padding:13px}.product-info h3{font-size:17px}.product-info p{font-size:12px}.add-product{font-size:12px}.cart{position:static;padding:22px 18px}
+  .shop{padding:56px 6%}.shop-layout,.products{grid-template-columns:1fr}.product{grid-template-columns:115px 1fr}.product-art{min-height:180px;font-size:52px}.product-art img{min-height:180px}.product-info{padding:13px}.product-info h3{font-size:17px}.product-info p{font-size:12px}.add-product{font-size:12px}.cart{position:static;padding:22px 18px}.fries-art img{min-height:190px}
+  .registration-form{grid-template-columns:1fr}.registration-form .btn{grid-column:auto}.registration-panel{padding:22px 18px}
+  .size-select{font-size:16px;min-height:44px}
   .member-nav{padding:8px 6%;gap:6px}.member-tab{padding:11px 14px;font-size:14px}
+  .partners{padding:56px 6%}.partner-logos{grid-template-columns:1fr 1fr;gap:10px}.partner-slot{min-height:110px;padding:14px;font-size:13px}
 }
 @media(max-width:380px){
   .member-actions{align-items:stretch;flex-direction:column}
@@ -86,6 +103,11 @@ h1,h2,h3,.logo,.member-badge,.btn,.k,.slogan{font-family:'Barlow Condensed','Ari
 }`;
 document.head.appendChild(mobileStyles);
 document.querySelector('#loginScreen img').src='logo 3.png';
+document.querySelector('#memberSite header .logo img').src='logo 3.png';
+document.querySelector('.hero h1').textContent='SARAKO BOULONAK';
+document.title='SARAKO BOULONAK';
+const footerLogo=document.querySelector('footer .logo img');
+footerLogo?.replaceWith(Object.assign(document.createElement('div'),{className:'footer-brand',innerHTML:'<span class="green">SARAKO</span> <span class="red">BOULONAK</span>'}));
 document.querySelector('.cta p')?.remove();
 const loginScreen=document.getElementById('loginScreen');
 const memberSite=document.getElementById('memberSite');
@@ -101,6 +123,48 @@ document.querySelectorAll('.value').forEach((value,index)=>{
     text.replaceWith(paragraph);
   }
 });
+document.querySelector('.cards').insertAdjacentHTML('beforeend','<div class="card"><div class="pic fries-art" role="img" aria-label="Barquette de frites"></div><div><h3>SOIRÉE TUCHE</h3><p>Une soirée conviviale avec moules et frites.</p></div></div>');
+const friesPhoto=document.createElement('img');
+friesPhoto.src='barquette frite.png';
+friesPhoto.alt='Barquette de frites';
+document.querySelector('.fries-art').replaceChildren(friesPhoto);
+const musCard=document.querySelector('.events .card');
+const musInfo=musCard.lastElementChild;
+musInfo.insertAdjacentHTML('afterbegin','<span class="event-date">16 JANVIER 2027</span>');
+musInfo.insertAdjacentHTML('beforeend','<button class="event-register" type="button">INSCRIPTION EN ÉQUIPE</button>');
+const taloaCard=[...document.querySelectorAll('.events .card')].find(card=>card.innerText.includes('TALOA AUX FÊTES DE SARE'));
+taloaCard?.lastElementChild.insertAdjacentHTML('afterbegin','<span class="event-date">12 SEPTEMBRE 2026</span>');
+if(taloaCard)document.querySelector('.cards').prepend(taloaCard);
+const newYearCard=document.createElement('div');
+newYearCard.className='card new-year-card';
+newYearCard.innerHTML='<div class="pic" style="background:linear-gradient(135deg,#111,#d71920)"></div><div><span class="event-date">31 DÉCEMBRE 2026 - 12H30</span><h3>RÉVEILLON DU JOUR DE L’AN</h3><p>Rendez-vous à la salle Lurberri pour un repas festif.</p><strong class="event-price">50 EUR PAR PERSONNE</strong><button class="event-register" type="button">INSCRIPTION AU REPAS</button></div>';
+const newYearPhoto=document.createElement('img');
+newYearPhoto.src="jour de l'an.jpg";
+newYearPhoto.alt='Photo du jour de l’an';
+newYearCard.querySelector('.pic').replaceChildren(newYearPhoto);
+musCard.before(newYearCard);
+const newYearPanel=document.createElement('div');
+newYearPanel.className='registration-panel';
+newYearPanel.innerHTML='<div class="k">RÉVEILLON DU JOUR DE L’AN</div><h3>Inscription au repas</h3><p>31 décembre 2026 à 12h30 - salle Lurberri - 50 EUR par personne.</p><form class="registration-form"><input name="name" required placeholder="Nom et prénom"><input name="phone" required type="tel" placeholder="Numéro de téléphone"><button class="btn" type="submit">ENVOYER L’INSCRIPTION</button></form><p class="registration-note">Votre application e-mail s’ouvrira pour finaliser l’inscription.</p>';
+newYearCard.after(newYearPanel);
+newYearCard.querySelector('.event-register').addEventListener('click',()=>newYearPanel.classList.toggle('open'));
+newYearPanel.querySelector('form').addEventListener('submit',event=>{
+  event.preventDefault();
+  const data=new FormData(event.currentTarget);
+  const body=encodeURIComponent(`Nom et prénom : ${data.get('name')}\nTéléphone : ${data.get('phone')}\nRéveillon du jour de l’an - 31 décembre 2026 à 12h30\nSalle Lurberri\nRepas : 50 EUR par personne`);
+  window.location.href=`mailto:boulonak@gmail.com?subject=Inscription réveillon du jour de l’an&body=${body}`;
+});
+const registrationPanel=document.createElement('div');
+registrationPanel.className='registration-panel';
+registrationPanel.innerHTML='<div class="k">TOURNOI DE MUS</div><h3>Inscription en équipe de 2</h3><p>Inscrivez les deux membres de votre équipe pour le tournoi du 16 janvier 2027.</p><form class="registration-form"><input name="team" required placeholder="Nom de l’équipe"><input name="person1" required placeholder="Joueur 1 - nom et prénom"><input name="phone1" required type="tel" placeholder="Joueur 1 - téléphone"><input name="person2" required placeholder="Joueur 2 - nom et prénom"><input name="phone2" required type="tel" placeholder="Joueur 2 - téléphone"><button class="btn" type="submit">ENVOYER L’INSCRIPTION</button></form><p class="registration-note">Votre application e-mail s’ouvrira pour finaliser l’inscription.</p>';
+musCard.after(registrationPanel);
+musInfo.querySelector('.event-register').addEventListener('click',()=>registrationPanel.classList.toggle('open'));
+registrationPanel.querySelector('form').addEventListener('submit',event=>{
+  event.preventDefault();
+  const data=new FormData(event.currentTarget);
+  const body=encodeURIComponent(`Équipe : ${data.get('team')}\nJoueur 1 : ${data.get('person1')} - ${data.get('phone1')}\nJoueur 2 : ${data.get('person2')} - ${data.get('phone2')}\nTournoi de Mus - 16 janvier 2027`);
+  window.location.href=`mailto:boulonak@gmail.com?subject=Inscription tournoi de Mus&body=${body}`;
+});
 const cta=document.querySelector('.cta');
 cta.insertAdjacentHTML('beforebegin',`<section class="shop" id="boutique"><div class="k">LA BOUTIQUE BOULONAK</div><h2 class="title">LES ESSENTIELS DE L'ASSOCIATION</h2><p class="shop-intro">Commandez vos articles Boulonak directement en ligne.</p><div class="shop-layout"><div class="products"><article class="product"><div class="product-art shirt-art"><img src="tee shirt.png" alt="Tee-shirt Boulonak"></div><div class="product-info"><h3>TEE-SHIRT</h3><p>Le tee-shirt officiel Boulonak.</p><strong>20 EUR</strong><button class="add-product" data-name="Tee-shirt" data-price="20">AJOUTER AU PANIER</button></div></article><article class="product"><div class="product-art pen-art">B</div><div class="product-info"><h3>STYLO</h3><p>Le stylo aux couleurs de l'association.</p><strong>3 EUR</strong><button class="add-product" data-name="Stylo" data-price="3">AJOUTER AU PANIER</button></div></article><article class="product"><div class="product-art key-art">BK</div><div class="product-info"><h3>PORTE-CLES</h3><p>Un souvenir pratique a emporter partout.</p><strong>5 EUR</strong><button class="add-product" data-name="Porte-cles" data-price="5">AJOUTER AU PANIER</button></div></article><article class="product"><div class="product-art wallet-art">BM</div><div class="product-info"><h3>PORTE-MONNAIE</h3><p>Un accessoire compact aux couleurs Boulonak.</p><strong>8 EUR</strong><button class="add-product" data-name="Porte-monnaie" data-price="8">AJOUTER AU PANIER</button></div></article></div><aside class="cart"><div class="k">VOTRE COMMANDE</div><h3>Recapitulatif</h3><div id="cartItems" class="cart-items">Votre panier est vide.</div><div class="cart-total"><span>Total</span><strong id="cartTotal">0 EUR</strong></div><form id="orderForm"><input name="name" required placeholder="Nom et prenom"><input name="email" type="email" required placeholder="Votre e-mail"><input name="phone" type="tel" placeholder="Telephone"><button class="btn" type="submit">ENVOYER LA COMMANDE</button></form><p class="order-note">Votre application e-mail s'ouvrira pour finaliser l'envoi.</p></aside></div></section>`);
 const productImages=[['.pen-art','stylo.png','Stylo Boulonak'],['.key-art','porte clé.png','Porte-clés Boulonak'],['.wallet-art','porte monnaie.png','Porte-monnaie Boulonak']];
@@ -110,23 +174,52 @@ productImages.forEach(([selector,source,alt])=>{
   image.alt=alt;
   document.querySelector(selector).replaceChildren(image);
 });
-const tabs=[['home','ACCUEIL'],['asso','QUI SOMMES-NOUS'],['events','ÉVÉNEMENTS'],['boutique','BOUTIQUE']];
-const tabPanels=[document.querySelector('.hero'),document.getElementById('asso'),document.querySelector('.events'),document.getElementById('boutique')];
+const partnersPanel=document.createElement('section');
+partnersPanel.className='partners';
+partnersPanel.id='partenaires';
+partnersPanel.innerHTML='<div class="k">NOS PARTENAIRES</div><h2 class="title">MERCI À CEUX QUI NOUS ACCOMPAGNENT</h2><p class="partners-intro">Nous remercions chaleureusement nos partenaires pour leur confiance et leur soutien. Leur engagement contribue à faire vivre les projets de SARAKO BOULONAK.</p><div class="partner-logos"><div class="partner-slot">Logo partenaire à ajouter</div><div class="partner-slot">Logo partenaire à ajouter</div><div class="partner-slot">Logo partenaire à ajouter</div><div class="partner-slot">Logo partenaire à ajouter</div></div>';
+const mgLogo=document.createElement('img');
+mgLogo.src='mg conseil.png';
+mgLogo.alt='Logo MG Conseil';
+partnersPanel.querySelector('.partner-slot').replaceChildren(mgLogo);
+const grottesLogo=document.createElement('img');
+grottesLogo.src='grottes de sare logo.png';
+grottesLogo.alt='Logo Grottes de Sare';
+partnersPanel.querySelectorAll('.partner-slot')[1].replaceChildren(grottesLogo);
+const lagunakLogo=document.createElement('img');
+lagunakLogo.src='lagunak logo.jpg';
+lagunakLogo.alt='Logo Lagunak';
+partnersPanel.querySelectorAll('.partner-slot')[2].replaceChildren(lagunakLogo);
+const jaureguiLogo=document.createElement('img');
+jaureguiLogo.src='jauregui peinture logo.png';
+jaureguiLogo.alt='Logo Jauregui Peinture';
+partnersPanel.querySelectorAll('.partner-slot')[3].replaceChildren(jaureguiLogo);
+cta.before(partnersPanel);
+const shirtProduct=document.querySelector('.product');
+shirtProduct.querySelector('.add-product').insertAdjacentHTML('beforebegin','<select class="size-select" aria-label="Taille du tee-shirt"><option value="Adulte homme - S">Adulte homme - S</option><option value="Adulte homme - M">Adulte homme - M</option><option value="Adulte homme - L">Adulte homme - L</option><option value="Adulte homme - XL">Adulte homme - XL</option><option value="Adulte femme - XS">Adulte femme - XS</option><option value="Adulte femme - S">Adulte femme - S</option><option value="Adulte femme - M">Adulte femme - M</option><option value="Adulte femme - L">Adulte femme - L</option><option value="Enfant - 7 ans">Enfant - 7 ans</option><option value="Enfant - 8 ans">Enfant - 8 ans</option><option value="Enfant - 9 ans">Enfant - 9 ans</option><option value="Enfant - 10 ans">Enfant - 10 ans</option><option value="Enfant - 11 ans">Enfant - 11 ans</option><option value="Enfant - 12 ans">Enfant - 12 ans</option></select>');
+const tabs=[['home','ACCUEIL'],['asso','QUI SOMMES-NOUS'],['events','ÉVÉNEMENTS'],['boutique','BOUTIQUE'],['partenaires','NOS PARTENAIRES']];
+const tabPanels=[document.querySelector('.hero'),document.getElementById('asso'),document.querySelector('.events'),document.getElementById('boutique'),partnersPanel];
 document.querySelectorAll('.gallery,.cta').forEach(panel=>panel.hidden=true);
 const navigation=document.createElement('nav');
 navigation.className='member-nav';
 navigation.setAttribute('aria-label','Navigation membre');
 navigation.innerHTML=tabs.map(([id,label],index)=>`<button class="member-tab${index===0?' active':''}" data-tab="${id}" type="button">${label}</button>`).join('');
 document.querySelector('header').after(navigation);
+document.querySelector('.hero>div').insertAdjacentHTML('beforeend','<div class="home-links"><button class="home-link" data-tab="asso" type="button">QUI SOMMES-NOUS</button><button class="home-link" data-tab="events" type="button">VOIR LES ÉVÉNEMENTS</button><button class="home-link" data-tab="boutique" type="button">ACCÉDER À LA BOUTIQUE</button></div>');
 tabPanels.forEach((panel,index)=>{panel.classList.add('tab-panel');panel.hidden=index!==0;});
+function activateTab(tabId){
+  const activeIndex=tabs.findIndex(([id])=>id===tabId);
+  if(activeIndex<0)return;
+  tabPanels.forEach((panel,index)=>{panel.hidden=index!==activeIndex;});
+  navigation.querySelectorAll('.member-tab').forEach(tab=>tab.classList.toggle('active',tab.dataset.tab===tabId));
+  tabPanels[activeIndex].scrollIntoView({behavior:'smooth',block:'start'});
+}
 navigation.addEventListener('click',event=>{
   const button=event.target.closest('.member-tab');
   if(!button)return;
-  const activeIndex=tabs.findIndex(([id])=>id===button.dataset.tab);
-  tabPanels.forEach((panel,index)=>{panel.hidden=index!==activeIndex;});
-  navigation.querySelectorAll('.member-tab').forEach(tab=>tab.classList.toggle('active',tab===button));
-  tabPanels[activeIndex].scrollIntoView({behavior:'smooth',block:'start'});
+  activateTab(button.dataset.tab);
 });
+document.querySelector('.home-links').addEventListener('click',event=>{const button=event.target.closest('.home-link');if(button)activateTab(button.dataset.tab);});
 const cart={};
 const cartItems=document.getElementById('cartItems');
 const cartTotal=document.getElementById('cartTotal');
@@ -137,8 +230,10 @@ function renderCart(){
 }
 document.querySelectorAll('.add-product').forEach(button=>button.addEventListener('click',()=>{
   const {name,price}=button.dataset;
-  cart[name]=cart[name]||{name,price:Number(price),quantity:0};
-  cart[name].quantity++;
+  const size=button.closest('.product').querySelector('.size-select')?.value;
+  const itemName=size?`${name} (${size})`:name;
+  cart[itemName]=cart[itemName]||{name:itemName,price:Number(price),quantity:0};
+  cart[itemName].quantity++;
   renderCart();
 }));
 document.getElementById('orderForm').addEventListener('submit',event=>{
@@ -149,7 +244,7 @@ document.getElementById('orderForm').addEventListener('submit',event=>{
   const total=cartTotal.textContent;
   const subject=encodeURIComponent('Commande boutique Boulonak');
   const body=encodeURIComponent(`Nom : ${formData.get('name')}\nE-mail : ${formData.get('email')}\nTéléphone : ${formData.get('phone')||'Non renseigne'}\n\nCommande :\n${Object.values(cart).map(item=>`${item.name} x${item.quantity} - ${item.price*item.quantity} EUR`).join('\n')}\n\nTotal : ${total}`);
-  window.location.href=`mailto:?subject=${subject}&body=${body}`;
+  window.location.href=`mailto:boulonak@gmail.com?subject=${subject}&body=${body}`;
 });
 
 function showSite(){
