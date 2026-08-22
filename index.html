@@ -16,9 +16,18 @@
 <header><div class="logo"><img src="logo.JPG" alt="BOULONAK"></div><div class="member-actions"><span class="member-badge">ESPACE MEMBRES</span><button class="logout" id="logoutBtn">DÉCONNEXION</button></div></header><section class="hero"><div><div class="k">ASSOCIATION BASQUE • SARE</div><h1>BOULONAK</h1><div class="slogan">Faire vivre, partager, s'amuser !</div><p>Une association basque festive qui rassemble autour d'événements conviviaux, de traditions et de bons moments partagés.</p><a class="btn" href="#asso">DÉCOUVRIR L'ASSOCIATION →</a></div></section><section id="asso"><div class="about"><div><div class="k">QUI SOMMES-NOUS ?</div><h2 class="title">BOULONAK,<br>plus qu'une association,<br>une famille !</h2><p>Nous sommes une bande d'amis passionnés par notre culture, nos traditions et surtout par les bons moments partagés.</p><p>Notre objectif : organiser des événements ouverts à tous pour faire vivre l'esprit basque dans la joie et la simplicité.</p></div><div class="values"><div class="value">🤝<h3>CONVIVIALITÉ</h3>Des moments de partage authentiques.</div><div class="value">🎵<h3>FÊTE</h3>Soirées, repas et ambiance unique.</div><div class="value">🃏<h3>TRADITIONS</h3>Jeux, pelote et culture basque.</div><div class="value">❤<h3>SOLIDARITÉ</h3>Des projets menés ensemble.</div></div></div></section><section class="events"><div class="k">À NE PAS MANQUER</div><h2 class="title">NOS PROCHAINS ÉVÉNEMENTS</h2><div class="cards"><div class="card"><div class="pic" style="background-image:url('tournoi de mus.jpg')"></div><div><h3>TOURNOI DE MUS</h3><p>Un tournoi convivial aux Grottes de Sare.</p></div></div><div class="card"><div class="pic" style="background-image:url('repas covivial.jpg')"></div><div><h3>MARCHÉ DES PRODUCTEURS LOCAUX</h3><p>Un grand repas pour partager.</p></div></div><div class="card"><div class="pic" style="background-image:url('TAloa.jpg')"></div><div><h3>TALOA AUX FÊTES DE SARE</h3><p>Musique et bonne humeur.</p></div></div><div class="card"><div class="pic" style="background-image:url('journee pelote.jpg')"></div><div><h3>JOURNÉE PELOTE</h3><p>Tournois et initiations.</p></div></div></div></section><section class="gallery"><div class="k">EN IMAGES</div><h2 class="title">DES SOUVENIRS INOUBLIABLES</h2><div class="photos"><div class="photo" style="background-image:url('souvenir1.jpg')"></div><div class="photo" style="background-image:url('souvenir2.jpg')"></div><div class="photo" style="background-image:url('souvenir3.JPG')"></div><div class="photo" style="background-image:url('souvenir 5.jpg')"></div><div class="photo" style="background-image:url('souvenir6.jpg')"></div></div></section><section class="cta"><h2 class="title">REJOIGNEZ L'AVENTURE BOULONAK !</h2><p>Envie de participer, d'aider ou simplement de soutenir l'association ? Chaque coup de main compte !</p></section><footer><div class="logo"><img src="logo.JPG" alt="BOULONAK"></div><p>© 2026 Association BOULONAK — 64310 Sare</p></footer></div>
 <script>
 const mobileStyles=document.createElement('style');
-mobileStyles.textContent=`*,*:before,*:after{box-sizing:border-box}
+mobileStyles.textContent=`@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
+*,*:before,*:after{box-sizing:border-box}
 html,body{width:100%;max-width:100%;overflow-x:hidden}
-body{min-width:0}
+body{min-width:0;font-family:'DM Sans',Arial,sans-serif}
+h1,h2,h3,.logo,.member-badge,.btn,.k,.slogan{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif}
+.title{font-weight:700;letter-spacing:.2px}
+.values{gap:18px}
+.value{min-height:175px;padding:26px 24px;border:1px solid #e3ded6;border-left:3px solid #d71920;background:#fff;box-shadow:0 8px 24px #0000000d;position:relative;transition:transform .2s ease,box-shadow .2s ease}
+.value:hover{transform:translateY(-4px);box-shadow:0 14px 30px #00000018}
+  .value-mark{display:none}
+.value h3{margin:0 0 10px;font-size:18px;letter-spacing:1px}
+.value p{margin:0;line-height:1.55;color:#555}
 @media(max-width:560px){
   #loginScreen{min-height:100dvh;min-height:100svh;padding:max(16px,env(safe-area-inset-top)) 16px max(16px,env(safe-area-inset-bottom));align-items:center}
   .login-card{width:100%;max-height:calc(100dvh - 32px);overflow:auto;padding:26px 20px}
@@ -42,6 +51,11 @@ body{min-width:0}
   .title{font-size:clamp(32px,10vw,38px);line-height:1.1}
   .cta .title{font-size:clamp(36px,11vw,42px)}
   .value{padding:20px}
+  .values{gap:12px}
+  .value{min-height:150px;padding:22px 20px;border:1px solid #e3ded6;border-left:3px solid #d71920;background:#fff;box-shadow:0 8px 24px #0000000d;position:relative}
+  .value-mark{display:block;color:#d71920;font-size:12px;font-weight:bold;letter-spacing:2px;margin-bottom:22px}
+  .value h3{margin:0 0 9px;font-size:17px;letter-spacing:1px}
+  .value p{margin:0;line-height:1.5;color:#555}
   .pic,.photo{height:190px}
   .card h3{font-size:18px;line-height:1.2}
   .card p{line-height:1.5}
@@ -59,6 +73,15 @@ const memberSite=document.getElementById('memberSite');
 const username=document.getElementById('username');
 const password=document.getElementById('password');
 const loginError=document.getElementById('loginError');
+document.querySelectorAll('.value').forEach((value,index)=>{
+  value.firstChild.remove();
+  const text=value.lastChild;
+  if(text.nodeType===Node.TEXT_NODE){
+    const paragraph=document.createElement('p');
+    paragraph.textContent=text.textContent.trim();
+    text.replaceWith(paragraph);
+  }
+});
 
 function showSite(){
   loginScreen.style.display='none';
